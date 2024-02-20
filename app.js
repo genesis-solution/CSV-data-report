@@ -26,7 +26,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
     lines.forEach(line => {
       const [exp, time, value] = line.split(',');
-      if (time && value && parseFloat(value.trim()) > 0 && parseFloat(value.trim()) < 4) {
+      if (time && value && Math.abs(parseFloat(value.trim())) > 0 && Math.abs(parseFloat(value.trim())) < 4) {
         xdata.push(time.trim())
         ydata.push(parseFloat(value.trim()))
       }
