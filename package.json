@@ -1,0 +1,20 @@
+{
+  "name": "chart",
+  "version": "1.0.0",
+  "description": "Brian chart",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chart"
+  ],
+  "author": "brian",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "csv-parser": "^3.0.0",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
